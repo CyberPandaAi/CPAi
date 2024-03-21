@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a049478cc6.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Gugi&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="airdrop.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Wallet & Display Balance</title>
+</head>
+
+<body>
+    <div id="home" class="home-page">
+        <div class="navbar">
+            <div class="main-navbox">
+                <div class="logo">
+                    <a href="#">
+                        <img src="logo.png" alt="">
+                    </a>
+                </div>
+                <div class="nav-items" id="menu">
+                    <div><a href="index.html">HOME</a></div>
+                    <div><a href="#">DOCS</a></div>
+                    <div><a href="#footer">CONTACT US</a></div>
+                    <div><a href="web3.html">AIRDROP</a></div>
+                </div>
+                <div class="ss" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="welcome">
+            <h1>Welcome to Cyberpanda Ai Airdrop page</h1> <br>All info related airdrop will be psoted here, stay tuned
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="main-box">
+        <button id="connectWallet" class="connect-btn">Connect Metamask/okx Wallet</button>
+        <div id="balance">Balance: 0 Matic</div>
+            </div>
+        <!-- Existing HTML code -->
+        <div id="tokenBalance">Token Balance: ERROR</div>
+        <!-- Load Web3 library -->
+        <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+        <script src="index.js"></script>
+        <script>
+            function toggleMenu() {
+                let x = document.getElementById("menu");
+                if (x.style.display === "flex") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "flex";
+                }
+            }
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.home-page {
+    height: 120vh;
+    width: 100%;
+    background-color: black;
+    font-family: "Chivo Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Gugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    /* position: fixed; */
+}
+
+.main-navbox {
+    width: 70%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(209, 55, 55, 0));
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    filter: blur(0px);
+}
+
+.logo img {
+    height: 3rem;
+    width: 3rem;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    /* animation-timing-function: ease-in-out; */
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+.logo {
+    margin-left: 15px;
+    height: 3rem;
+    width: 5rem;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    padding-left: 40px;
+    font-size: 20px;
+    transition: all ease 0.2s;
+}
+
+.nav-items a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px;
+    text-decoration: underline;
+}
+
+.ss {
+    color: white;
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .home-page {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        border-radius: 0;
+        transform: all ease 0.5s;
+    }
+
+    .ss {
+        color: rgb(255, 255, 255);
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav-items a {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+.Home-content {
+    height: 130vh;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+.home-content-main {
+    font-family: "Chivo Mono", monospace;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 70vh;
+    width: 80%;
+}
+
+.home-content-main H1 {
+    font-family: "Gugi", sans-serif;
+    font-size: 3rem;
+}
+
+.Docs-btn{
+    font-size: 2rem;
+    height: 4rem;
+    width: 10rem;
+    border: 2px solid black;
+    border-radius: 2px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: all ease 1s;
+    /*  */
+    font-size: 23px;
+    height: 12vh;
+    width: 20%;
+    cursor: pointer;
+    /* color: rgb(0, 219, 0); */
+    /* border: 2px solid rgba(0, 218, 0); */
+    /* background-color: rgba(0, 245, 0, 0.136); */
+    transition: all ease 1s;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 900px){
+    .Docs-btn{
+        font-size: 20px;
+        height: 4rem;
+        width: 10rem;
+    }
+}
+
+.Docs-btn:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.divider{
+    height: 1vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.Tokenomics{
+    height: 160vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.h1-tokenomics{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 3.4rem;
+    margin:10px ;
+}
+.tokenomics-data{
+    height: 10vh;
+    width: 70%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.cards{
+    filter: brightness(99%);
+    cursor: pointer;
+    margin-top: 5px;
+    height: 30vh;
+    width: 70%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 4pxpx;
+}
+.t-d-h2{
+    text-align: center;
+}
+.cards p{
+    margin-top: 20px;
+}
+@media screen and (max-width: 900px){
+    .t-d-h2{
+        font-size: 15px;
+    }
+    .cards p{
+        font-size: 10px;
+    }
+}
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Lfooter{
+    display: flex;
+    align-items: center;
+    text-align: center ;
+    background-color: rgb(0, 0, 0);
+    padding: 4px;
+    width: 50%;
+    height: 20vh;
+}
+.Rfooter{
+    background-color: rgb(0, 0, 0);
+    padding: 4px;
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.Rfooter p{
+    text-decoration: underline;
+    margin-top: 10px;
+    text-align: center;
+}
+.Rfooter a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.5s;
+}
+.Rfooter a:hover{
+    text-shadow: 1px 1px 10px;
+}
+
+
+
+

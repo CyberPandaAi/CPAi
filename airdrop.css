@@ -1,0 +1,28 @@
+body{
+    font-family: "Gugi", sans-serif;
+    color: white;
+}
+.space{
+    height: 30vh;
+    width: 100%;
+}
+.welcome{
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.connect-btn{
+    font-family: "Gugi", sans-serif;
+    border: 2px solid;
+    border-radius: 4px;
+    height: 10vh;
+    width: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
